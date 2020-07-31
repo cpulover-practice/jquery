@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="jquery-3.x-git.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <br>
+    <p>This is some text</p>
+    <button id="toggle">Toggle text</button>
+
+    <script>
+        $("div").click(function () {
+            //using callback function
+            $(this).fadeOut("slow", function () {
+                $(this).fadeIn();
+            });
+
+            //or just call other function inside
+            //show($(this));
+        })
+
+        function show(element) {
+            setTimeout(function () {
+                element.fadeIn();
+            }
+                , 500);
+        }
+
+        $("#toggle").click(function () {
+            $("p").toggle();
+        })
+
+
+    </script>
+</body>
+
+</html>
