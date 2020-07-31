@@ -16,11 +16,14 @@
   - ```attr("<attribute>", "<value>")```: set value for attribute
   - ```css("<property>", "<value>")```: set value for style property
   - ```css("<property>")```: get value of the style property
-- Fading 
-[[fading.html]()]
+- [Fading]() 
   - ```fadeOut()``` and ```fadeIn()```  
   [[advanced.html]()]
     - ```fadeOut("slow")```
     - ```fadeOut("<callback_function>)```: execute function right after fading out
   - ```toggle()```
+- [Animation]() 
+  - ```animate({<property1:"value1",...}, <duration>)```
+  - Support callback function
+
 

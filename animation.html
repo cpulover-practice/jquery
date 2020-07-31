@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="jquery-3.x-git.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+
+    <script>
+        $(".circle").click(function () {
+            const DURATION = 1000;
+            $(this).animate({
+                width: "300px",
+                height: "300px",
+                marginTop: "100px",
+                marginLeft: "100px",
+                backgroundColor: "red",
+                borderRadius: "0%"
+            }, DURATION, function(){ //callback function
+                $(this).css("background-color", "red");
+            })
+        })
+    </script>
+</body>
+
+</html>
