@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="jquery-ui\external\jquery\jquery.js"></script>
+    <script src="jquery-ui\jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui\jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #draggable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+    </div>
+    <script>
+        $(function () {
+            $("#draggable").draggable({axis: "x"});
+        });
+    </script>
+</body>
+
+</html>

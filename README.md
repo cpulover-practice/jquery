@@ -16,14 +16,13 @@
   - ```attr("<attribute>", "<value>")```: set value for attribute
   - ```css("<property>", "<value>")```: set value for style property
   - ```css("<property>")```: get value of the style property
+
+### Other Stuffs
 - [Fading]() 
   - ```fadeOut()``` and ```fadeIn()```  
-  [[advanced.html]()]
     - ```fadeOut("slow")```
     - ```fadeOut("<callback_function>)```: execute function right after fading out
   - ```toggle()```
-
-### Other Stuffs
 - [Animation]() 
   - ```animate({<property1:"value1",...}, <duration>)```
   - Support callback function
@@ -37,8 +36,12 @@
   - ```/<content>/i```: return first matched content (insensitive)
   - ```/<content>/ig```: return all matched contents (insensitive)
 
-
-
+### jQuery UI 
+- Setup
+  - ```<script src="jquery-ui\jquery-ui.js"></script>```
+  - ```<script src="jquery-ui\external\jquery\jquery.js"></script>```
+  - ```<link rel="stylesheet" href="jquery-ui\jquery-ui.css">```
+- [API documentation](https://api.jqueryui.com/)
 
 # Notes - Tips
 - AJAX does not work on local files
