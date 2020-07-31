@@ -17,17 +17,17 @@
   - ```css("<property>", "<value>")```: set value for style property
   - ```css("<property>")```: get value of the style property
 
-### Other Stuffs
+### Animation
 - [Fading]() 
   - ```fadeOut()``` and ```fadeIn()```  
     - ```fadeOut("slow")```
-    - ```fadeOut("<callback_function>)```: execute function right after fading out
+    - ```fadeOut("<callback>)```: execute callback function right after fading out
   - ```toggle()```
 - [Animation]() 
   - ```animate({<property1:"value1",...}, <duration>)```
   - Support callback function
 - [AJAX]() 
-  - ```$.get("<url>", <callback_function>)```: get data from url file the execute function (with parameter is the retrieved data)
+  - ```$.get("<url>", <callback>)```: get data from url file the execute function (with parameter is the retrieved data)
   - ```$.ajax("<url>").done(<function1>).fail(<function2>)```
 - [Regular expression]()
   - ```<variable>.match(<expression>)```: return content(s)/null
