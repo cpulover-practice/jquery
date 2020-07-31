@@ -25,5 +25,9 @@
 - [Animation]() 
   - ```animate({<property1:"value1",...}, <duration>)```
   - Support callback function
+- [AJAX]() 
+  - ```$.get("<url>", <callback_function>)```: get data from url file the execute function (with parameter is the retrieved data)
+  - ```$.ajax("<url>").done(<function1>).fail(<function2>)```
 
-
+# Notes - Tips
+- AJAX does not work on local files

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.x-git.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <p>Getting data from info.txt...</p>
+    <p id="text1"></p>
+    <p>Getting data from infoooooo.txt...</p>
+    <p id="text2"></p>
+
+    <script>
+        $.get("info.txt", function(data){
+            $("#text1").html(data);
+        })
+
+        $.ajax("infooooooooooo.txt")
+        //if success
+        .done(function(data){
+            $("#text2").html(data);
+        })
+        //if fail
+        .fail(function(){
+            $("#text2").html("File does not exist!");
+
+        })
+    </script>
+</body>
+</html>
