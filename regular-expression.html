@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="jquery-3.x-git.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+
+<body>
+    <script>
+        // var sentence = "texts TeXta texts";
+        var sentence = "TExts texts";
+
+        var regexSensitive = /text/;
+        //output: text
+        console.log("Sensitive case: " + sentence.match(regexSensitive));
+        console.log("Found sensitive case: " + regexSensitive.test(sentence));
+
+        //output: TExt
+        var regexInsensitive = /text/i;
+        console.log("Insensitive case: " + sentence.match(regexInsensitive));
+
+         //output: TExt, text
+         var regexCount = /text/gi;
+        console.log("Insensitive case (total): " + sentence.match(regexCount));
+    </script>
+</body>
+
+</html>

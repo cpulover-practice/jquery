@@ -22,12 +22,23 @@
     - ```fadeOut("slow")```
     - ```fadeOut("<callback_function>)```: execute function right after fading out
   - ```toggle()```
+
+### Other Stuffs
 - [Animation]() 
   - ```animate({<property1:"value1",...}, <duration>)```
   - Support callback function
 - [AJAX]() 
   - ```$.get("<url>", <callback_function>)```: get data from url file the execute function (with parameter is the retrieved data)
   - ```$.ajax("<url>").done(<function1>).fail(<function2>)```
+- [Regular expression]()
+  - ```<variable>.match(<expression>)```: return content(s)/null
+  - ```<expression>.test(<variable>)```: return true/false
+  - ```/<content>/```: return first matched content (sensitive)
+  - ```/<content>/i```: return first matched content (insensitive)
+  - ```/<content>/ig```: return all matched contents (insensitive)
+
+
+
 
 # Notes - Tips
 - AJAX does not work on local files
